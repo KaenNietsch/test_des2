@@ -1,4 +1,4 @@
-import { PageProps } from "next";
+
 import PreviewDetail from "./PreviewDetail";
 
 export async function generateStaticParams() {
