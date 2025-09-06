@@ -1,3 +1,4 @@
+import { PageProps } from "next";
 import PreviewDetail from "./PreviewDetail";
 
 export async function generateStaticParams() {
@@ -11,12 +12,8 @@ export async function generateStaticParams() {
   ];
 }
 
-type PreviewPageProps = {
-  params: {
-    id: string;
-  };
-};
-
-export default function PreviewPage({ params }: PreviewPageProps) {
+export default function PreviewPage(
+  { params }: Awaited<PageProps<{ id: string }>>
+) {
   return <PreviewDetail projectId={params.id} />;
 }
