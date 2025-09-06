@@ -11,9 +11,10 @@ export async function generateStaticParams() {
   ];
 }
 
-// Kendi tipini kullan
 interface PreviewPageProps {
-  params: { id: string };
+  params: {
+    id: string;
+  };
 }
 
 export default function PreviewPage({ params }: PreviewPageProps) {
