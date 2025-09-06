@@ -1,4 +1,3 @@
-
 import PreviewDetail from "./PreviewDetail";
 
 export async function generateStaticParams() {
@@ -12,8 +11,11 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function PreviewPage(
-  { params }: Awaited<PageProps<{ id: number }>>
-) {
+// Kendi tipini tanımla
+interface PreviewPageProps {
+  params: { id: string };
+}
+
+export default function PreviewPage({ params }: PreviewPageProps) {
   return <PreviewDetail projectId={params.id} />;
 }
