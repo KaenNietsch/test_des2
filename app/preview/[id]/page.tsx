@@ -11,7 +11,7 @@ export async function generateStaticParams() {
   ];
 }
 
-// Kendi tipini tanımla
+// Kendi tipini kullan
 interface PreviewPageProps {
   params: { id: string };
 }
