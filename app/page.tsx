@@ -724,13 +724,14 @@ export default function Home() {
                         )}
                       </div>
                     </div>
-                    {item.type === 'catalog' && (
-                      <div className="absolute top-4 left-4">
-                        <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">
-                          {item.pages} Sayfa
-                        </span>
-                      </div>
-                    )}
+{item.type === 'catalog' && "pages" in item && (
+  <div className="absolute top-4 left-4">
+    <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+      {item.pages} Sayfa
+    </span>
+  </div>
+)}
+
                   </div>
                   <div className="p-4 md:p-6">
                     <div className="flex items-center justify-between mb-3">
