@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 }
 
 export default function PreviewPage(
-  { params }: Awaited<PageProps<{ id: string }>>
+  { params }: Awaited<PageProps<{ id: number }>>
 ) {
   return <PreviewDetail projectId={params.id} />;
 }
