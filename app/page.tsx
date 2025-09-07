@@ -365,16 +365,16 @@ export default function Home() {
 
   const handlePricingAction = (plan: any) => {
     const whatsappMessage = `Merhaba! ${plan.name} paketi hakkında bilgi almak istiyorum. Detayları paylaşabilir misiniz?`;
-    window.open(`https://wa.me/905551234567?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+    window.open(`https://wa.me/905519439308?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
   };
 
   const handleContactAction = (type: string) => {
     if (type === 'phone') {
-      window.open('tel:+905551234567', '_blank');
+      window.open('tel:+905519439308', '_blank');
     } else if (type === 'email') {
-      window.open('mailto:info@yakaco.com?subject=Web Sitesi Hakkında', '_blank');
+      window.open('mailto:yakaco@hotmail.com?subject=Web Sitesi Hakkında', '_blank');
     } else if (type === 'whatsapp') {
-      window.open('https://wa.me/905551234567?text=Merhaba! Web sitesi hakkında bilgi almak istiyorum.', '_blank');
+      window.open('https://wa.me/905519439308?text=Merhaba! Web sitesi hakkında bilgi almak istiyorum.', '_blank');
     } else if (type === 'appointment') {
       setAppointmentModalOpen(true);
     }
