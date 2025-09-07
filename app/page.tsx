@@ -994,7 +994,7 @@ export default function Home() {
                     <i className="ri-phone-line text-amber-600 text-xl"></i>
                   </div>
                   <h3 className={`font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Telefon</h3>
-                  <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>+90 555 123 45 67</p>
+                  <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>+90 551 964 93 08</p>
                   <p className={`text-sm mt-1 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>7/24 destek hattı</p>
                 </div>
                 <div className={`p-6 rounded-2xl shadow-sm border transition-colors duration-300 cursor-pointer hover:scale-105 ${isDarkMode ? 'bg-gray-800 border-gray-700 hover:border-amber-400' : 'bg-white border-gray-100 hover:border-amber-200'}`} 
@@ -1004,7 +1004,7 @@ export default function Home() {
                     <i className="ri-mail-line text-amber-600 text-xl"></i>
                   </div>
                   <h3 className={`font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>E-mail</h3>
-                  <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>info@yakaco.com</p>
+                  <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>yakaco@hotmail.com</p>
                   <p className={`text-sm mt-1 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>24 saat içinde yanıt</p>
                 </div>
                 <div className={`p-6 rounded-2xl shadow-sm border transition-colors duration-300 ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'}`}>
@@ -1012,8 +1012,8 @@ export default function Home() {
                     <i className="ri-time-line text-amber-600 text-xl"></i>
                   </div>
                   <h3 className={`font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Çalışma Saatleri</h3>
-                  <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>Pazartesi - Cuma</p>
-                  <p className={`text-sm mt-1 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>09:00 - 18:00</p>
+                  <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>Haftanın Her Günü</p>
+                  <p className={`text-sm mt-1 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>7/24</p>
                 </div>
               </div>
               <div className="lg:col-span-2">
