@@ -133,39 +133,36 @@ export default function CatalogPreview({ isOpen, onClose, catalogData, isDarkMod
           }
 
           // Turn.js'i başlat
-          flipbook.turn({
-            width: window.innerWidth < 768 ? window.innerWidth * 0.9 : 900,
-            height: window.innerWidth < 768 ? window.innerWidth * 1.2 : 600,
-            autoCenter: true,
-            display: window.innerWidth < 768 ? 'single' : 'double',
-            acceleration: true,
-            gradients: true,
-            elevation: 50,
-            when: {
-              turning: function(event, page, view) {
-                setIsFlipping(true);
-                setCurrentPage(page);
-                
-                // Flip ses efekti (opsiyonel)
-                const flipSound = document.getElementById('flip-sound');
-                if (flipSound) {
-                  flipSound.currentTime = 0;
-                  flipSound.play().catch(() => {});
-                }
+flipbook.turn({
+  width: window.innerWidth < 768 ? window.innerWidth * 0.9 : 900,
+  height: window.innerWidth < 768 ? window.innerWidth * 1.2 : 600,
+  autoCenter: true,
+  display: window.innerWidth < 768 ? 'single' : 'double',
+  acceleration: true,
+  gradients: true,
+  elevation: 50,
+  when: {
+    turning: (event: unknown, page: number, view: unknown) => {
+      setIsFlipping(true);
+      setCurrentPage(page);
 
-                setTimeout(() => {
-                  setIsFlipping(false);
-                }, 600);
-              },
-              turned: function(event, page) {
-                setCurrentPage(page);
-              }
-            }
-          });
-        }
-      }, 100);
+      // Flip ses efekti (opsiyonel)
+      const flipSound = document.getElementById('flip-sound') as HTMLAudioElement | null;
+      if (flipSound) {
+        flipSound.currentTime = 0;
+        flipSound.play().catch(() => {});
+      }
+
+      setTimeout(() => {
+        setIsFlipping(false);
+      }, 600);
+    },
+    turned: (event: unknown, page: number) => {
+      setCurrentPage(page);
     }
-  };
+  }
+});
+
 
   const handlePrevPage = () => {
     if (typeof window !== 'undefined' && window.jQuery && window.jQuery.fn.turn) {
