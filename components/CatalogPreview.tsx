@@ -162,7 +162,7 @@ flipbook.turn({
     }
   }
 });
-
+        }
 
   const handlePrevPage = () => {
     if (typeof window !== 'undefined' && window.jQuery && window.jQuery.fn.turn) {
