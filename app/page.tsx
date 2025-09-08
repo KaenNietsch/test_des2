@@ -365,16 +365,16 @@ export default function Home() {
 
   const handlePricingAction = (plan: any) => {
     const whatsappMessage = `Merhaba! ${plan.name} paketi hakkında bilgi almak istiyorum. Detayları paylaşabilir misiniz?`;
-    window.open(`https://wa.me/905519439308?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+    window.open(`https://wa.me/905519649308?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
   };
 
   const handleContactAction = (type: string) => {
     if (type === 'phone') {
-      window.open('tel:+905519439308', '_blank');
+      window.open('tel:+905519649308', '_blank');
     } else if (type === 'email') {
       window.open('mailto:yakaco@hotmail.com?subject=Web Sitesi Hakkında', '_blank');
     } else if (type === 'whatsapp') {
-      window.open('https://wa.me/905519439308?text=Merhaba! Web sitesi hakkında bilgi almak istiyorum.', '_blank');
+      window.open('https://wa.me/905519649308?text=Merhaba! Web sitesi hakkında bilgi almak istiyorum.', '_blank');
     } else if (type === 'appointment') {
       setAppointmentModalOpen(true);
     }
@@ -955,7 +955,7 @@ export default function Home() {
             <div className="text-center mt-8 md:mt-12">
               <p className={`mb-4 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Sorunuzun cevabını bulamadınız mı?</p>
               <a
-                href="https://wa.me/905551234567?text=Merhaba! Web sitesi hakkında sorum var."
+                href="https://wa.me/905519649308?text=Merhaba! Web sitesi hakkında sorum var."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors duration-200 cursor-pointer"
